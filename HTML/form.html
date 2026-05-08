@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="./submit.html">
+        <label>First Name : </label>
+        <input type="text" placeholder="Enter Fname here.." value="Pragati" disabled>
+        <br><br>
+
+
+        <label>Last Name : </label>
+        <input type="text" placeholder="Enter Lname here..">
+        <br><br>
+
+
+        <label>Email : </label>
+        <input type="email" required>
+        <br><br>
+
+        <!-- regular expression -->
+
+        <label>Password : </label>
+        <input type="password" pattern="[A-Za-z]{1,}">
+        <br><br>
+
+
+        <label>Age : </label>
+        <input type="number">
+        <br><br>
+
+
+        <label>Address : </label>
+        <textarea rows="6" cols="30" minlength="3" maxlength="10" required></textarea>
+        <br><br>
+
+
+        <label>Colour : </label>
+        <input type="color">
+        <br><br>
+
+
+        <label>Gender : </label>
+        <br>
+        <label>Male : </label>
+        <input type="radio" name="Gender" id="male">
+        <label>Female : </label>
+        <input type="radio" name="Gender" id="female">
+        <br><br>
+
+        <label>Hobbies : </label>
+        <br>
+        <label>Cricket : </label>
+        <input type="checkbox">
+        <label>Swimming : </label>
+        <input type="checkbox">
+        <label>Reading : </label>
+        <input type="checkbox">
+        <br><br>
+
+        <select name="city" id="city">
+            <option value="Ahemdabad">Ahemdabad</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Himmatnagar">Himmatnagar</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+        </select>
+        <br><br>
+
+        <label>Time : </label>
+        <input type="time">
+        <br><br>
+
+        <label>Date : </label>
+        <input type="date">
+        <br><br>
+
+        <label>Date & Time : </label>
+        <input type="datetime-local">
+        <br><br>
+
+        <label>Photo : </label>
+        <input type="file">
+        <br><br>
+
+
+        <input type="submit" value="SENT">
+
+        <input type="reset">
+
+        <input type="search">
+    </form>
+
+</body>
+</html>

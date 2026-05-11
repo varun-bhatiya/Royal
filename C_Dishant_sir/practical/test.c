@@ -121,7 +121,7 @@ int main()
                             if (i * j * k * l * m * n == num)
                             {
                                 int output = i * 100000 + j * 10000 + k * 1000 + l * 100 + m * 10 + n;
-                                printf("%d ",output);
+                                printf("%d\t", output);
                             }
                         }
                     }
@@ -129,6 +129,5 @@ int main()
             }
         }
     }
-
     return 0;
 }

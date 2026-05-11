@@ -99,14 +99,36 @@ Example: "number" → 2
  •211111 → 2 * 1 * 1 * 1 * 1 * 1 = 2
 */
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main()
-// {
-//     int num,sum;
-//     printf("Enter the Number : ");
-//     scanf("%d",&num);
+int main()
+{
+    int num;
+    printf("Enter the Number : ");
+    scanf("%d", &num);
+    for (int i = 1; i <= 9; i++)
+    {
+        for (int j = 1; j <= 9; j++)
+        {
+            for (int k = 1; k <= 9; k++)
+            {
+                for (int l = 1; l <= 9; l++)
+                {
+                    for (int m = 1; m <= 9; m++)
+                    {
+                        for (int n = 1; n <= 9; n++)
+                        {
+                            if (i * j * k * l * m * n == num)
+                            {
+                                int output = i * 100000 + j * 10000 + k * 1000 + l * 100 + m * 10 + n;
+                                printf("%d ",output);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
-//     return 0;
-// }
-
+    return 0;
+}
